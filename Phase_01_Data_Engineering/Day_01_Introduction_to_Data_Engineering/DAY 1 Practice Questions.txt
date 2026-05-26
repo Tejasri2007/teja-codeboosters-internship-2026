@@ -1,0 +1,39 @@
+1. A hospital stores patient X-ray images, doctor’s notes and table of patient vital signs. Classify each data type.
+
+Patient X-ray images – Unstructured data
+Doctor’s notes – Semi-structured / Unstructured data
+Patient vital signs table – Structured data
+
+2. Why do companies need Data Engineers? Give a real-world example.
+
+Companies need Data Engineers to collect and manage large amounts of data. They clean the data and store it properly so it can be used for analysis and making decisions.
+
+Example: Amazon stores customer order details, payments and delivery data. Data Engineers organize this data so the company can track orders and improve customer service.
+
+3. Write Python code to load sales.csv and show first 10 rows.
+
+import pandas as pd
+
+df = pd.read_csv("sales.csv")
+print(df.head(10))
+
+4. What does df.shape return? If it returns (500,15), what does each number mean?
+
+df.shape returns the number of rows and columns in the DataFrame.
+
+If it returns (500,15):
+
+500 means number of rows
+15 means number of columns
+
+5. How do you filter a DataFrame called orders to show only rows where city is Mumbai?
+
+orders[orders["city"] == "Mumbai"]
+
+This will display only the rows where city is Mumbai.
+
+6. You accidentally delete your Python script. How would GitHub have saved you?
+
+If the Python script was uploaded to GitHub, it can be restored from there.
+
+GitHub saves previous versions of files. Even if deleted from the system, we can open the repository and download or restore the file again.
